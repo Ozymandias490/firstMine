@@ -1,0 +1,87 @@
+<mvc:View controllerName="projectdb.controller.myApp"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        
+        <!-- <Table items="{/Employees}">
+            <columns>
+                <Column>
+                    <Label text="EmployeeID"/>
+                </Column>
+
+                <Column>
+                    <Label text="LastName"/>
+                </Column>
+
+                <Column>
+                    <Label text="Title"/>
+                </Column>
+
+                <Column>
+                    <Label text="HireDate"/>
+                </Column>
+
+                <Column>
+                    <Label text="Country"/>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{EmployeeID}"/>
+                        <Text text="{LastName}"/>
+                        <Text text="{Title}"/>
+                        <Text text="{HireDate}"/>
+                        <Text text="{Country}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table> -->
+
+        <Button 
+            type="Neutral"
+			text="Open Dialog Form"
+			width="230px"
+			press=".onOpenDialog"
+			class="sapUiSmallMarginBottom"
+			ariaHasPopup="Dialog" />
+
+        <Table items="{EmpDataModel>/}">
+            <columns>
+                <Column>
+                    <Label text="EmployeeID"/>
+                </Column>
+
+                <Column>
+                    <Label text="LastName"/>
+                </Column>
+
+                <Column>
+                    <Label text="Title"/>
+                </Column>
+
+                <Column>
+                    <Label text="HireDate"/>
+                </Column>
+
+                <Column>
+                    <Label text="Country"/>
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{EmpDataModel>EmployeeID}"/>
+                        <Text text="{EmpDataModel>LastName}"/>
+                        <Text text="{EmpDataModel>Title}"/>
+                        <Text text="{EmpDataModel>HireDate}"/>
+                        <Text text="{EmpDataModel>Country}"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+
+
+        
+    </Page>
+</mvc:View>

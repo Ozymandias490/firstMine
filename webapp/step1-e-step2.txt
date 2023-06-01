@@ -1,0 +1,9 @@
+1 step - chiamare api e mettere i dati in un json model, 
+legare il json model alla property items della tabella 
+che mostrerà gli elementi
+
+2 step - implementare un button nell'header della tabella 
+che al press aprirà una dialog con un simple form all'interno, 
+esso dovrà essere legato a un modello json differente dalla tabella 
+che servirà per recuperare i dati del form , dopo di chè prendete 
+questo modello e fate un merge con il modello della tabella
